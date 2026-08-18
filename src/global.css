@@ -1,0 +1,66 @@
+body {
+    background-color: #0A0A0A;
+    color: #e5e2e1;
+}
+
+.terminal-block {
+    border: 1px solid #333333;
+    background-color: #1A1A1A;
+}
+
+.tech-line {
+    border-left: 1px solid #333333;
+}
+
+.mac-dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.dot-red {
+    background-color: #ff5f56;
+}
+
+.dot-yellow {
+    background-color: #ffbd2e;
+}
+
+.dot-green {
+    background-color: #27c93f;
+}
+
+.glass-nav {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+::selection {
+    background-color: #ff9e9e;
+    color: #000;
+}
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #544342 #1A1A1A;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1A1A1A;
+    border: 1px solid #333333;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #544342;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #ff9e9e;
+}
