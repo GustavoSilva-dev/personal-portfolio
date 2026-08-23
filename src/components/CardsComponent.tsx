@@ -21,7 +21,7 @@ function CardsComponent() {
                 href="#">
 
                 <motion.div
-                className="absolute left-0 w-10 h-10 bg-red-400 rounded-full"
+                className="absolute left-0 w-10 h-10 bg-red-500 rounded-full"
                 animate={{
                     scale: isHover1 ? 10 : 0,
                 }}
@@ -33,12 +33,12 @@ function CardsComponent() {
                 </motion.div>
 
                 <div
-                    className="absolute left-0 top-0 bottom-0 w-1 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity z-50">
+                    className="absolute left-0 top-0 bottom-0 w-1 bg-inverse-surface opacity-0 group-hover:opacity-100 duration-300 transition-opacity z-50">
                 </div>
                 <div className="flex items-center gap-3 z-50">
                     <motion.span 
                     animate={{
-                        color: isHover1 ? "#ffffff" : "#ff9e9e"
+                        color: isHover1 ? "#e5e2e1" : "#ff9e9e"
                     }}
                     className="material-symbols-outlined text-primary-container text-2xl">description</motion.span>
                     <h3 className="font-headline-md text-sm text-on-surface font-bold uppercase tracking-tight">
@@ -46,7 +46,7 @@ function CardsComponent() {
                 </div>
                 <motion.span
                     animate={{
-                        color: isHover1 ? "#ffffff" : "#ff9e9e",
+                        color: isHover1 ? "#e5e2e1" : "#ff9e9e",
                         x: isHover1 ? 0 : -24,
                         visibility: isHover1 ? "visible" : "hidden"
                     }}
@@ -59,7 +59,7 @@ function CardsComponent() {
             onMouseLeave={() => setIsHover2(false)} 
             className="terminal-block cursor-pointer p-4 flex items-center justify-between group transition-all relative overflow-hidden rounded-xl">
                 <motion.div
-                className="absolute left-0 w-10 h-10 bg-red-400 rounded-full"
+                className="absolute left-0 w-10 h-10 bg-red-500 rounded-full"
                 animate={{
                     scale: isHover2 ? 10 : 0,
                 }}
@@ -70,19 +70,19 @@ function CardsComponent() {
                 >
                 </motion.div>
                 <div
-                    className="absolute left-0 top-0 bottom-0 w-1 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity z-50">
+                    className="absolute left-0 top-0 bottom-0 w-1 bg-inverse-surface opacity-0 group-hover:opacity-100 duration-300 transition-opacity z-50">
                 </div>
                 <div className="flex items-center gap-3">
                     <motion.span 
                     animate={{
-                        color: isHover2 ? "#ffffff" : "#ff9e9e"
+                        color: isHover2 ? "#e5e2e1" : "#ff9e9e"
                     }} className="material-symbols-outlined text-primary-container text-2xl z-50">code</motion.span>
                     <h3 className="font-headline-md text-sm text-on-surface font-bold uppercase tracking-tight z-50">
                         GitHub</h3>
                 </div>
                 <motion.span
                     animate={{
-                        color: isHover2 ? "#ffffff" : "#ff9e9e",
+                        color: isHover2 ? "#e5e2e1" : "#ff9e9e",
                         x: isHover2 ? 0 : -24,
                         visibility: isHover2 ? "visible" : "hidden"
                     }}
@@ -97,7 +97,7 @@ function CardsComponent() {
                 href="#">
 
                 <motion.div
-                className="absolute left-0 w-10 h-10 bg-red-400 rounded-full"
+                className="absolute left-0 w-10 h-10 bg-red-500 rounded-full"
                 animate={{
                     scale: isHover3 ? 10 : 0,
                 }}
@@ -109,19 +109,19 @@ function CardsComponent() {
                 </motion.div>
 
                 <div
-                    className="absolute left-0 top-0 bottom-0 w-1 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity z-50">
+                    className="absolute left-0 top-0 bottom-0 w-1 bg-inverse-surface opacity-0 group-hover:opacity-100 duration-300 transition-opacity z-50">
                 </div>
                 <div className="flex items-center gap-3">
                     <motion.span 
                     animate={{
-                        color: isHover3 ? "#ffffff" : "#ff9e9e"
+                        color: isHover3 ? "#e5e2e1" : "#ff9e9e"
                     }} className="material-symbols-outlined text-2xl z-50">link</motion.span>
                     <h3 className="font-headline-md text-sm text-on-surface font-bold uppercase tracking-tight z-50">
                         LinkedIn</h3>
                 </div>
                 <motion.span
                     animate={{
-                        color: isHover3 ? "#ffffff" : "#ff9e9e",
+                        color: isHover3 ? "#e5e2e1" : "#ff9e9e",
                         x: isHover3 ? 0 : -24,
                         visibility: isHover3 ? "visible" : "hidden"
                     }}

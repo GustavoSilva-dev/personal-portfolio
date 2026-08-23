@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 function Header() {
     return (
     <nav
-        className="docked full-width top-0 sticky z-50 backdrop-blur-sm border-b border-outline-variant transition-all duration-300">
+        className="docked full-width top-0 sticky z-50 backdrop-blur-md border-b border-outline-variant transition-all duration-300">
         <div
             className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
             <h1 className="font-headline-md text-headline-md tracking-tighter dark:text-primary font-black">
-                GUSTAVO_<span className="text-primary">SILVA</span>
+                GUSTAVO_<span className="text-primary-container">SILVA</span>
             </h1>
             <div className="md:flex items-center space-x-8">
                 <motion.a

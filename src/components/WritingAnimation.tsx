@@ -6,7 +6,7 @@ export function WritingAnimation ({
   words,
   typingSpeed = 80,
   deletingSpeed = 50,
-  pauseDuration = 1000,
+  pauseDuration = 1500,
   className = "",
 }: WritingProps) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);

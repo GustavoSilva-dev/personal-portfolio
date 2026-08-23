@@ -1,10 +1,12 @@
 import './index.css'
 import Header from "./components/Header"
 import Hero from './components/Hero'
+import ParticlesComponent from './components/ParticlesComponent'
 
 function App() {
   return (
     <>
+      <ParticlesComponent/>
       <Header/>
       <Hero />
       <h1 className="text-lg font-bold border-1">
