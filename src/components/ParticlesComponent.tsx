@@ -2,9 +2,9 @@ import Particles from "../../@/components/Particles.jsx"
 
 function ParticlesComponent() {
     return (
-        <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: -1}}>
+        <div style={{ width: '100vh', height: '100vw', position: 'absolute', zIndex: -1}}>
             <Particles
-                particleCount={370}
+                particleCount={500}
                 particleSpread={10}
                 speed={0.1}
                 particleColors={["#860000", "#b30000", "#b80000"]}
@@ -12,7 +12,7 @@ function ParticlesComponent() {
                 particleHoverFactor={0.1}
                 alphaParticles
                 particleBaseSize={130}
-                sizeRandomness={0.9}
+                sizeRandomness={1.4}
                 cameraDistance={48}
                 disableRotation={false}
                 className=""

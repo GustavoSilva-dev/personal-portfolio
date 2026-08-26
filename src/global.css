@@ -3,6 +3,10 @@ body {
     color: #e5e2e1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .terminal-block {
     border: 1px solid #333333;
     background-color: #1A1A1A;
