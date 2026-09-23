@@ -61,7 +61,7 @@ function CardsComponent() {
             whileHover={{ scale: 1.05 }}
             onMouseEnter={() => setIsHover2(true)} 
             onMouseLeave={() => setIsHover2(false)} 
-            className="terminal-block cursor-pointer p-4 flex items-center justify-between group transition-all relative overflow-hidden rounded-xl">
+            className="terminal-block p-4 flex items-center justify-between group transition-all relative overflow-hidden rounded-xl">
                 <motion.div
                 className="absolute left-0 w-10 h-10 bg-[linear-gradient(90deg,hsla(0,100%,68%,1)_0%,hsla(0,100%,64%,1)_50%,hsla(0,81%,33%,1)_100%,teal)] rounded-full"
                 animate={{

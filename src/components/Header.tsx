@@ -15,7 +15,7 @@ function Header() {
                 <motion.a
                 whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
                 transition={{ duration: 0.2 }}
-                className="font-headline-md text-md text-white font-bold uppercase px-2 rounded-lg transition-colors duration-200"
+                className="font-headline-md text-md text-white font-bold uppercase px-2 rounded-lg transition-colors duration-200 cursor-none"
                     href="#experiencia">Experiência</motion.a>
                 <motion.a 
                 whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
@@ -39,7 +39,7 @@ function Header() {
                     href="#contato">Contato</motion.a>
             </div>
             <div className="md:flex items-center gap-4">
-                <a className="font-label-caps text-label-caps uppercase px-6 py-3 bg-white text-black border border-white hover:bg-transparent hover:text-primary-container hover:border-primary-container transition-all duration-300 rounded-none cursor-pointer"
+                <a className="font-label-caps text-label-caps uppercase px-6 py-3 bg-white text-black border border-white hover:bg-transparent hover:text-primary-container hover:border-primary-container transition-all duration-300 rounded-none"
                     href="#contato">
                     Hire Me
                 </a>

@@ -6,6 +6,7 @@ import ExperienceSection from './components/ExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
 import SideRays from "../@/components/SideRays"
 import Lenis from "lenis"
+import TargetCursor from "../@/components/TargetCursor"
 
 function App() {
   useEffect(() => {
@@ -15,7 +16,7 @@ function App() {
       smoothWheel: true,
     });
 
-    function raf(time : number) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
@@ -29,11 +30,20 @@ function App() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
+      <TargetCursor
+        spinDuration={3.5}
+        hideDefaultCursor
+        parallaxOn
+        hoverDuration={0.8}
+        cursorColor="#ff5e5e"
+        cursorColorOnTarget="#000000"
+      />
+
       <SideRays className="fixed inset-0 z-0" />
       <div className="relative z-10">
-        <Header/>
+        <Header />
         <Hero />
-        <ExperienceSection/>
+        <ExperienceSection />
         <ProjectsSection />
       </div>
     </div>
