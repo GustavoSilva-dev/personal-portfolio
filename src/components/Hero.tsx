@@ -1,5 +1,7 @@
-import { easeIn, easeInOut, motion, transform } from "framer-motion";
-import { WritingAnimation } from "./WritingAnimation";
+import { motion } from "framer-motion";
+import { WritingAnimation } from "./UI/WritingAnimation";
+import foto from "../assets/photo.jpeg"
+import GradientText from "./UI/gradient-text";
 import CardsComponent from "./CardsComponent";
 
 function Hero() {
@@ -11,7 +13,7 @@ function Hero() {
     ] 
 
     return (
-        <section className="col-span-20 md:col-span-12 flex items-start justify-center md:items-center gap-12 mb-32"
+        <section className="col-span-20 md:col-span-12 flex items-start justify-center md:items-center gap-12 py-20"
             id="sobre">
             <motion.div initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                 whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
@@ -23,8 +25,8 @@ function Hero() {
                 </div>
                 <motion.img 
                     alt="Gustavo Silva"
-                    className="w-30 h-auto object-cover rounded-full border border-outline-variant grayscale hover:grayscale-0 hover:shadow-[0_0_10px_red] transition-all duration-1000"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg7zKnJs0lMa75w5imlxUUQd3i9ywIW5BThBnOPlh09znhf4H3NcJosM7ffHOjJz9D3twgRonJ0hSKsVr7Ocp_eO-xwNn5JnvjkTo-TNwUTMqnPNlNw7Bn6EH1OMop1jiE4AM1gdn8TIBxzdCDabLwdPOp36KcxiUXZJ82pzTgWliS63KTdYeuJdH22h_Tr7PLrZqBbOn2LxkkfA5GdDWcLC_B7bFtFciAOd8tzfnKVwYYoUGij5mYQvyCOuTUMbqllG0" />
+                    className="w-30 h-auto object-cover rounded-full border border-outline-variant grayscale hover:grayscale-0 transition-all duration-1000"
+                    src={foto} />
             </motion.div>
             <div className="flex flex-col gap-6 tech-line pl-0 md:pl-12 py-6 mt-10">
                 <motion.div
@@ -41,7 +43,7 @@ function Hero() {
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 1, ease: "easeInOut" }} className="font-headline-lg-mobile text-headline-lg-mobile md:!text-[80px] md:!tracking-[-0.04em] md:!font-[900]">
                     GUSTAVO <div className="-mt-2"></div>
-                    <span className="text-primary-container">SILVA</span>
+                    <GradientText gradient="linear-gradient(90deg, hsla(0, 100%, 75%, 1) 0%, hsla(0, 81%, 60%, 1) 25%, hsla(0, 100%, 45%, 1) 50%, hsla(0, 81%, 33%, 1) 75%, hsla(0, 95%, 75%, 1) 100%)" text="SILVA"/>
                 </motion.h1>
 
                 <motion.h2 initial={{ opacity: 0, y: 30, filter: "blur(5px)" }}
@@ -56,7 +58,7 @@ function Hero() {
                     transition={{ duration: 1.4, ease: "easeInOut" }}
                     className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
                 >
-                    Desenvolvedor Full Stack & Salesforce focado em arquitetar sistemas escaláveis e interfaces de
+                    Desenvolvedor Full Stack focado em arquitetar sistemas escaláveis e interfaces de
                     alta performance. Construindo pontes entre lógica complexa e experiência do usuário.
                 </motion.p>
 

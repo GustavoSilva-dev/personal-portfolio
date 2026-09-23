@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimate } from "framer-motion";
-import type { WritingProps } from "../types/WritingProps";
+import type { WritingProps } from "../../types/WritingProps";
 
 export function WritingAnimation ({
   words,

@@ -1,12 +1,12 @@
-import Particles from "../../@/components/Particles.jsx"
+import Particles from "../../../@/components/Particles"
 
 function ParticlesComponent() {
     return (
         <div style={{ width: '100vh', height: '100vw', position: 'absolute', zIndex: -1}}>
             <Particles
-                particleCount={500}
+                particleCount={700}
                 particleSpread={10}
-                speed={0.1}
+                speed={0.2}
                 particleColors={["#860000", "#b30000", "#b80000"]}
                 moveParticlesOnHover
                 particleHoverFactor={0.1}

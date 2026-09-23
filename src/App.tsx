@@ -2,9 +2,9 @@ import './index.css'
 import { useEffect } from 'react'
 import Header from "./components/Header"
 import Hero from './components/Hero'
-import ParticlesComponent from './components/ParticlesComponent'
 import ExperienceSection from './components/ExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
+import SideRays from "../@/components/SideRays"
 import Lenis from "lenis"
 
 function App() {
@@ -28,16 +28,15 @@ function App() {
   }, []);
 
   return (
-    <>
-      <ParticlesComponent/>
-      <Header/>
-      <Hero />
-      <ExperienceSection/>
-      <ProjectsSection />
-      <h1 className="text-lg font-bold border-1">
-        Hello world!
-      </h1>
-    </>
+    <div className="relative min-h-screen overflow-x-hidden">
+      <SideRays className="fixed inset-0 z-0" />
+      <div className="relative z-10">
+        <Header/>
+        <Hero />
+        <ExperienceSection/>
+        <ProjectsSection />
+      </div>
+    </div>
   )
 }
 

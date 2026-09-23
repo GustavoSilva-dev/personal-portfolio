@@ -1,40 +1,41 @@
 import "../index.css"
 import { motion } from "framer-motion";
+import { SquigglyText } from "../../@/components/ui/squiggly-text"
 
 function Header() {
     return (
     <nav
-        className="docked full-width top-0 sticky z-50 backdrop-blur-md border-b border-outline-variant transition-all duration-300">
+        className="docked full-width fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-outline-variant transition-all duration-300">
         <div
             className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
             <h1 className="font-headline-md text-headline-md tracking-tighter dark:text-primary font-black">
                 GUSTAVO_<span className="text-primary-container">SILVA</span>
             </h1>
-            <div className="md:flex items-center space-x-8">
+            <div className="md:flex items-center space-x-6">
                 <motion.a
-                whileHover={{ textShadow: "0 0 25px #ff5b5b", scale: 1.05 }}
-                transition={{ duration: 0.35 }}
-                className="font-headline-md text-md text-white font-bold uppercase transition-colors duration-200"
+                whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
+                transition={{ duration: 0.2 }}
+                className="font-headline-md text-md text-white font-bold uppercase px-2 rounded-lg transition-colors duration-200"
                     href="#experiencia">Experiência</motion.a>
                 <motion.a 
-                whileHover={{ textShadow: "0 0 25px #ff5b5b", scale: 1.05 }}
-                transition={{ duration: 0.35 }}
-                className="font-headline-md text-md font-bold text-white uppercase transition-colors duration-200"
+                whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
+                transition={{ duration: 0.2 }}
+                className="font-headline-md text-md font-bold text-white uppercase px-2 rounded-lg transition-colors duration-200"
                     href="#projetos">Projetos</motion.a>
                 <motion.a
-                whileHover={{ textShadow: "0 0 25px #ff5b5b", scale: 1.05 }}
-                transition={{ duration: 0.35 }}
-                className="font-headline-md text-white text-md font-bold uppercase transition-colors duration-200"
+                whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
+                transition={{ duration: 0.2 }}
+                className="font-headline-md text-white text-md font-bold uppercase px-2 rounded-lg transition-colors duration-200"
                     href="#stack">Stack</motion.a>
                 <motion.a 
-                whileHover={{ textShadow: "0 0 25px #ff5b5b", scale: 1.05 }}
-                transition={{ duration: 0.35 }}
-                className="font-headline-md text-white text-md font-bold uppercase transition-colors duration-200"
+                whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
+                transition={{ duration: 0.2 }}
+                className="font-headline-md text-white text-md font-bold uppercase px-2 rounded-lg transition-colors duration-200"
                     href="#sobre">Sobre</motion.a>
                 <motion.a 
-                whileHover={{ textShadow: "0 0 25px #ff5b5b", scale: 1.05 }}
-                transition={{ duration: 0.35 }}
-                className="font-headline-md text-white text-md font-bold uppercase transition-colors duration-200"
+                whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
+                transition={{ duration: 0.2 }}
+                className="font-headline-md text-white text-md font-bold uppercase px-2 rounded-lg transition-colors duration-200"
                     href="#contato">Contato</motion.a>
             </div>
             <div className="md:flex items-center gap-4">
