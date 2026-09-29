@@ -56,7 +56,7 @@ function Hero() {
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 1.4, ease: "easeInOut" }}
-                    className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
+                    className="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed"
                 >
                     Desenvolvedor Full Stack focado em arquitetar sistemas escaláveis e interfaces de
                     alta performance. Construindo pontes entre lógica complexa e experiência do usuário.

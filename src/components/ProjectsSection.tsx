@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import ParticleView from "./UI/ParticleText";
 import taskcoinImage from "../assets/taskcoin-print.jpg";
+import techsolutionsImage from "../assets/tech-solutions.jpg"
+import barbersyncImage from "../assets/barbersync.png"
+import vollmedImage from "../assets/vollmed.jpeg"
+import roadhelpImage from "../assets/roadhelp.jpg"
 
 type Project = {
     title: string;
@@ -12,16 +16,16 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "VOLL MED - API",
-        technologies: ["Java", "Spring Boot", "Spring Security", "JUnit", "Hibernate JPA", "MySQL"],
-        description: "API RESTful completa de controle de uma clínica médica, com controle de fluxo de consultas e testes unitários e de integração.",
-        image: null,
-    },
-    {
         title: "ROAD HELP",
         technologies: ["React", "Node.js", "ExpressJS", "TomTom Maps API", "MongoDB"],
         description: "Software de GPS dedicado para veículos de carga, com geração otimizada de rotas para determinadas escalas de veículos.",
-        image: null,
+        image: roadhelpImage,
+    },
+    {
+        title: "VOLL MED - API",
+        technologies: ["Java", "Spring Boot", "Spring Security", "JUnit", "Hibernate", "MySQL", "Swagger"],
+        description: "API RESTful completa de controle de uma clínica médica, com controle de fluxo de consultas e testes unitários e de integração.",
+        image: vollmedImage,
     },
     {
         title: "TASKCOIN",
@@ -33,14 +37,14 @@ const projects: Project[] = [
         title: "BARBERSYNC",
         technologies: ["React", "TypeScript", "Java", "Spring Boot", "Docker", "Tailwind", "Next.js"],
         description: "SAAS ERP completo de gestão de uma barbearia, com dashboards e agendamento.",
-        image: null,
+        image: barbersyncImage,
         status: "EM_DESENVOLVIMENTO",
     },
     {
         title: "TECH SOLUTIONS S.A.",
         technologies: ["Java 8", "Java Swing", "MySQL", "JDBC"],
         description: "Sistema Desktop para gestão de acesso de um estacionamento, com controle e gestão de entrada e saída de veículos e visitantes.",
-        image: null,
+        image: techsolutionsImage,
     },
 ];
 
