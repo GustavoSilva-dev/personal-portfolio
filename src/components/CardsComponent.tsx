@@ -1,5 +1,6 @@
-import { motion, scale } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function CardsComponent() {
     const [isHover1, setIsHover1] = useState(false)
@@ -44,7 +45,7 @@ function CardsComponent() {
                     }}
                     className="material-symbols-outlined text-primary-container text-2xl">description</motion.span>
                     <motion.h3 animate={{
-                        paddingRight: isHover1 ? 10 : 0
+                        letterSpacing: isHover1 ? "1.5px" : "-0.3px"
                     }} className="font-headline-md text-sm text-on-surface font-bold uppercase tracking-tight">
                         Baixar CV</motion.h3>
                 </div>
@@ -84,9 +85,9 @@ function CardsComponent() {
                         color: isHover2 ? "#e5e2e1" : "#FF5A5A",
                         scale: isHover2 ? 1.2 : 1,
                         rotate: isHover2 ? -20 : 0
-                    }} className="material-symbols-outlined text-primary-container text-2xl z-50">code</motion.span>
+                    }} className="text-primary-container text-2xl z-50"><FaGithub/></motion.span>
                     <motion.h3 animate={{
-                        paddingRight: isHover2 ? 10 : 0
+                        letterSpacing: isHover2 ? "1.5px" : "-0.3px"
                     }} className="font-headline-md text-sm text-on-surface font-bold uppercase tracking-tight z-50">
                         Github</motion.h3>
                 </div>
@@ -127,10 +128,10 @@ function CardsComponent() {
                         color: isHover3 ? "#e5e2e1" : "#FF5A5A",
                         scale: isHover3 ? 1.2 : 1,
                         rotate: isHover3 ? -20 : 0
-                    }} className="material-symbols-outlined text-2xl z-50">link</motion.span>
+                    }} className="material-symbols-outlined text-2xl z-50"><FaLinkedin/></motion.span>
                     <motion.h3 animate={{
-                        paddingRight: isHover3 ? 10 : 0
-                    }} className="font-headline-md text-sm text-on-surface font-bold uppercase tracking-tight z-50">
+                        letterSpacing: isHover3 ? "1.5px" : "-0.3px"
+                    }} className="font-headline-md text-sm text-on-surface font-bold uppercase z-50">
                         Linkedin</motion.h3>
                 </div>
                 <motion.span

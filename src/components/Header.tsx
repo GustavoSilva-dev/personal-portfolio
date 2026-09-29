@@ -11,7 +11,7 @@ function Header() {
             <h1 className="font-headline-md text-headline-md tracking-tighter dark:text-primary font-black">
                 GUSTAVO_<span className="text-primary-container">SILVA</span>
             </h1>
-            <div className="md:flex items-center space-x-6">
+            <div className="md:flex items-center space-x-5">
                 <motion.a
                 whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
                 transition={{ duration: 0.2 }}
@@ -27,6 +27,11 @@ function Header() {
                 transition={{ duration: 0.2 }}
                 className="font-headline-md text-white text-md font-bold uppercase px-2 rounded-lg transition-colors duration-200"
                     href="#stack">Stack</motion.a>
+                <motion.a
+                whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
+                transition={{ duration: 0.2 }}
+                className="font-headline-md text-white text-md font-bold uppercase px-2 rounded-lg transition-colors duration-200"
+                    href="#stack">Certificações</motion.a>
                 <motion.a 
                 whileHover={{ backgroundColor: "#531b1b", border: "0.5px solid red", translateY: -2 }}
                 transition={{ duration: 0.2 }}

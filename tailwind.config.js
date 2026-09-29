@@ -83,7 +83,7 @@ module.exports = {
                 "display-lg": ["80px", { "lineHeight": "1.0"}],
                 "headline-lg-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "800" }],
                 "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                "headline-lg": ["48px", { "lineHeight": "1.1", "fontWeight": "800" }],
                 "code-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
                 "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
                 "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
