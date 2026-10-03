@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection'
 import SideRays from "../@/components/SideRays"
 import Lenis from "lenis"
 import TargetCursor from "../@/components/TargetCursor"
+import Stack from './components/Stack'
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,7 @@ function App() {
         <Hero />
         <ExperienceSection />
         <ProjectsSection />
+        <Stack/>
       </div>
     </div>
   )
