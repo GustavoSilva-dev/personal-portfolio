@@ -5,6 +5,8 @@ import techsolutionsImage from "../assets/tech-solutions.jpg"
 import barbersyncImage from "../assets/barbersync.png"
 import vollmedImage from "../assets/vollmed.jpeg"
 import roadhelpImage from "../assets/roadhelp.jpg"
+import trackfitImage from "../assets/trackfit.png"
+import sampareportImage from "../assets/sampareport.png"
 
 type Project = {
     title: string;
@@ -16,10 +18,22 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "ROAD HELP",
+        title: "Road Help",
         technologies: ["React", "Node.js", "ExpressJS", "TomTom Maps API", "MongoDB"],
         description: "Software de GPS dedicado para veículos de carga, com geração otimizada de rotas para determinadas escalas de veículos.",
         image: roadhelpImage,
+    },
+    {
+        title: "SampaReport",
+        technologies: ["React", "TypeScript", "Spring Boot", "Oracle Database", "Cloudinary", "OpenStreetMap API"],
+        description: "Plataforma web de zeladoria colaborativa, permitindo usuários relatarem chamados e terem transparência sobre o andamento de cada chamado, com logs de auditoria, dashboards de gerenciamento administrativo e quórum comunitário",
+        image: sampareportImage,
+    },
+    {
+        title: "TrackFit",
+        technologies: ["Next.js", "React", "TypeScript", "Java", "Spring Boot", "MySQL", "Tailwind"],
+        description: "Micropainel de controle para monitorar o consumo diário de calorias e os exercícios físicos.",
+        image: trackfitImage,
     },
     {
         title: "VOLL MED - API",
@@ -28,20 +42,20 @@ const projects: Project[] = [
         image: vollmedImage,
     },
     {
-        title: "TASKCOIN",
+        title: "TaskCoin",
         technologies: ["React", "Java", "Spring Boot", "Docker", "PostgreSQL", "Supabase"],
         description: "Plataforma de gerenciamento e gamificação de tarefas familiares com sistema de recompensas e streak diário, permitindo aos responsáveis auditarem tarefas.",
         image: taskcoinImage,
     },
     {
-        title: "BARBERSYNC",
+        title: "BarberSync",
         technologies: ["React", "TypeScript", "Java", "Spring Boot", "Docker", "Tailwind", "Next.js"],
         description: "SAAS ERP completo de gestão de uma barbearia, com dashboards e agendamento.",
         image: barbersyncImage,
         status: "EM_DESENVOLVIMENTO",
     },
     {
-        title: "TECH SOLUTIONS S.A.",
+        title: "Tech Solutions S.A.",
         technologies: ["Java 8", "Java Swing", "MySQL", "JDBC"],
         description: "Sistema Desktop para gestão de acesso de um estacionamento, com controle e gestão de entrada e saída de veículos e visitantes.",
         image: techsolutionsImage,

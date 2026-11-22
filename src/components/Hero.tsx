@@ -28,7 +28,7 @@ function Hero() {
                     className="w-30 h-auto object-cover rounded-full border border-outline-variant grayscale hover:grayscale-0 transition-all duration-1000"
                     src={foto} />
             </motion.div>
-            <div className="flex flex-col gap-6 tech-line pl-0 md:pl-12 py-6 mt-10">
+            <div className="flex flex-col gap-5 tech-line pl-0 md:pl-12 py-6 mt-10">
                 <motion.div
                     initial={{ opacity: 0, y: 30, filter: "blur(5px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -59,7 +59,7 @@ function Hero() {
                     className="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed"
                 >
                     Desenvolvedor Full Stack focado em arquitetar sistemas escaláveis e interfaces de
-                    alta performance. Construindo pontes entre lógica complexa e experiência do usuário.
+                    alta performance. Experiência prática em desenvolvimento de APIs REST, deploy e integração, banco de dados e IA para produtividade.
                 </motion.p>
 
                 <CardsComponent/>

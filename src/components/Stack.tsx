@@ -18,9 +18,11 @@ const skills: Skill[] = [
     { name: "PostgreSQL", icon: "storage" },
     { name: "Supabase", icon: "cloud" },
     { name: "MongoDB", icon: "folder_open" },
-    { name: "Salesforce", icon: "cloud_done" },
     { name: "ExpressJS", icon: "api" },
     { name: "Prisma", icon: "layers" },
+    { name: "C#", icon: "code" },
+    { name: "ASP.NET", icon: "web" },
+    { name: "IA", icon: "smart_toy" },
 ];
 
 function Stack() {
